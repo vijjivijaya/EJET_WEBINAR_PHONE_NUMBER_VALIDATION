@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/dell/Desktop/EJET_WEBINAR_PHONE_NUMBER_VALIDATION"><classes><class name="com.bridgelabz.ejet.testcases.Webinar_Registration_Page_Test"><methods><include name="invalid_phn_No_Starting_With_Zero"/><include name="invalid_phn_No_Starting_With_Plus_Ninty_One_And_Hyphen"/><include name="invalid_phn_No_Starting_With_Plus_Ninty_One"/><include name="valid_phn_no"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/dell/Desktop/EJET_WEBINAR_PHONE_NUMBER_VALIDATION">
+        <classes>
+            <class name="com.bridgelabz.ejet.testcases.Webinar_Registration_Page_Test">
+                <methods>
+                    <include name="invalid_phn_No_Starting_With_Zero"/>
+                    <include name="invalid_phn_No_Starting_With_Plus_Ninty_One_And_Hyphen"/>
+                    <include name="invalid_phn_No_Starting_With_Plus_Ninty_One"/>
+                    <include name="valid_phn_no"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

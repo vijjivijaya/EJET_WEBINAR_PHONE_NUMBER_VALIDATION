@@ -9,11 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 public class Webinar_Registration_Page extends BaseClass {
 
     @FindBy(id="deftphnumber")
-    WebElement phone_Number;
+    public WebElement phone_Number;
     @FindBy(id="deftphnumbervalid")
-    WebElement invalid_ph_no_msg;
+    public WebElement invalid_ph_no_msg;
     @FindBy(id="defphicon")
-    WebElement ph_no_icon;
+    public WebElement ph_no_icon;
+
     public Webinar_Registration_Page(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver, this);
@@ -23,14 +24,11 @@ public class Webinar_Registration_Page extends BaseClass {
         phone_Number.sendKeys(phn_no);
         String invalid_msg = invalid_ph_no_msg.getText();
         return invalid_msg;
-
     }
     public boolean verify_Tick_Icon(String valid_phn_no){
         phone_Number.sendKeys(valid_phn_no);
         Boolean icon = ph_no_icon.isDisplayed();
         return icon;
     }
-
-
 }
 
